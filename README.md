@@ -33,10 +33,13 @@ Member engagement and activity levels
 
 ### 1. Database Setup
 
+### 1. Database Setup
+![ERD](https://github.com/najirh/Library-System-Management---P2/blob/main/library_erd.png)
+
 - **Database Creation**: Created a database named `library_db`.
 - **Table Creation**: Created tables for branches, employees, members, books, issued status, and return status. Each table includes relevant columns and relationships.
 
-  ```sql
+```sql
 CREATE DATABASE library_db;
 
 DROP TABLE IF EXISTS branch;
@@ -117,6 +120,7 @@ CREATE TABLE return_status
             return_book_isbn VARCHAR(50),
             FOREIGN KEY (return_book_isbn) REFERENCES books(isbn)
 );
+
 ```
 
 ### 2. CRUD Operations
@@ -133,7 +137,6 @@ CREATE TABLE return_status
 INSERT INTO books(isbn, book_title, category, rental_price, status, author, publisher)
 VALUES('978-1-60129-456-2', 'To Kill a Mockingbird', 'Classic', 6.00, 'yes', 'Harper Lee', 'J.B. Lippincott & Co.');
 SELECT * FROM books;
-```
 **Task 2: Update an Existing Member's Address**
 
 ```sql
