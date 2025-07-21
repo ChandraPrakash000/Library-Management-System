@@ -34,7 +34,7 @@ Member engagement and activity levels
 ### 1. Database Setup
 
 ### 1. Database Setup
-![ERD(https://github.com/ChandraPrakash000/Library-Management-System/blob/main/Library%20erd.png)
+![ERD](https://github.com/ChandraPrakash000/Library-Management-System/blob/main/Library%20erd.png)
 
 - **Database Creation**: Created a database named `library_db`.
 - **Table Creation**: Created tables for branches, employees, members, books, issued status, and return status. Each table includes relevant columns and relationships.
